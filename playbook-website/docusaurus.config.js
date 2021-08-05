@@ -43,26 +43,26 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Get Started',
+              label: 'Comece agora',
               to: '/docs/get-started',
             },
           ],
         },
         {
-          title: 'Guide and Policy',
+          title: 'Nossas Diretrizes',
           items: [
             {
-              label: 'Contribution Guide',
+              label: 'Como contribuir',
               href: '/docs/contribution/README',
             },
             {
-              label: 'Privacy',
+              label: 'Privacidade',
               href: '/privacy',
             },
           ],
         },
         {
-          title: 'Resources',
+          title: 'Extras',
           items: [
             {
               label: 'Blog',
