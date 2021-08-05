@@ -6,7 +6,7 @@ module.exports = {
   title: 'Guia de Boas Práticas para Bioinformática',
   tagline: 'Desenvolvimento de Pipelines no Varstation',
   url: 'https://varstation.github.io/',
-  baseUrl: '/',
+  baseUrl: '/bioinfo-playbook/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
