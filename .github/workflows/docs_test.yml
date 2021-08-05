@@ -29,4 +29,4 @@ jobs:
           key: ${{ runner.os }}-modules-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
 
       - name: Install and Build
-        run: yarn --cwd=playnook-website install && yarn --cwd=playbook-website build
+        run: yarn --cwd=playbook-website install && yarn --cwd=playbook-website build
