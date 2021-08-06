@@ -34,6 +34,6 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          BRANCH: gh-pages
-          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
-          FOLDER: playbook-website/build
+          branch: gh-pages
+          ssh-key: ${{ secrets.DEPLOY_TOKEN }}
+          folder: playbook-website/build
