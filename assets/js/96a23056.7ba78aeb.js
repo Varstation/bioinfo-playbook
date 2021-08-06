@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplaybook_website=self.webpackChunkplaybook_website||[]).push([[459],{9570:function(o){o.exports=JSON.parse('{"allTagsPath":"/bioinfo-playbook/blog/tags","slug":"hello","name":"hello","count":2,"permalink":"/bioinfo-playbook/blog/tags/hello"}')}}]);

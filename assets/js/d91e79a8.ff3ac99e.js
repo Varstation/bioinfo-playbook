@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkplaybook_website=self.webpackChunkplaybook_website||[]).push([[810],{5677:function(o){o.exports=JSON.parse('{"allTagsPath":"/bioinfo-playbook/blog/tags","slug":"facebook","name":"facebook","count":1,"permalink":"/bioinfo-playbook/blog/tags/facebook"}')}}]);
