@@ -11,3 +11,10 @@ Um guideline é um conjunto de práticas escritas que ajudam ao time tomar decis
 
 Neste playbook você irá encontrar as boas práticas e um guia para iniciantes a experientes para construção de pipelines de bioinformática para processamento de análise de variantes para a plataforma Varstation. O conteúdo deste repositório é open-source e colaborativo
 e está sobre a licença open-source BSD-3-Clause.
+
+
+
+### Seções
+
+![% concluído](https://progress-bar.dev/5/?title=completed)
+https://progress-bar.dev/5/?title=completed
