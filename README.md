@@ -17,4 +17,3 @@ e está sobre a licença open-source BSD-3-Clause.
 ### Seções
 
 ![% concluído](https://progress-bar.dev/5/?title=completed)
-https://progress-bar.dev/5/?title=completed
