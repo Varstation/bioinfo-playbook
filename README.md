@@ -16,11 +16,11 @@ e está sobre a licença open-source BSD-3-Clause.
 
 ### Seções
 
-![% concluído](https://progress-bar.dev/13/?title=concluido)
+![% concluído](https://progress-bar.dev/26/?title=concluido)
 
 
 - [x] **Arquitetura Base e Setup**
-- [ ] **Boas Vindas**
+- [x] **Boas Vindas**
 - [ ] **Para Começar**
 - [ ] **Ciclo de Vida do Pipeline**
 - [ ] **Boas Práticas Requisitos**
