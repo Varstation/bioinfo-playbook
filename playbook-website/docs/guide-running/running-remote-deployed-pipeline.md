@@ -39,9 +39,6 @@ Quaisquer um dos workflows na pasta workflow são bons exemplos para começar. V
 
 ```
 $ oliver configure
-
-
-
 ```
 
 Já temos uma configuração padrão para executar em nossos servidores AWS de homologação e uma para executar em nossos servidores locais da Genomika.
