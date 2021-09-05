@@ -109,7 +109,7 @@ Um pipeline que permita ser facilmente operado e atualizado é considerado um pi
 Código fonte legível e facil de entender é fundamental para quem estar desenvolvendo, seja o próprio autor ou qualquer outro bioinformata que decida a utilizar o pipeline ou até atualizar/manter o mesmo. Códigos definidos em módulos também garantem que trechos de código possam se validados, atualizados e compartilhados de forma independente. Isto é uma característica fundamental em construção de software  e o mesmo se aplica a códigos de pipeline de bioinformática. Códigos escritos em módulos permitem maior rapidez na atualização e se tornam reusáveis por outros pipelines.
 Nós recomendamos padrões bem definidos para escrita de código. Na área de bioinformática, o site GA4GH é uma grande fonte destes padrões de código. Sempre utilizar estilo de código permite que todos sigam um padrão para garantir a qualidade do código e evitar possíveis erros e bugs em operação.
 
-**Faça:** Utilize um espaço onde código possa ser navegado, acessado e compartilhado (exemplo: Github)
+**Faça:** Utilize um espaço onde código possa ser navegado, acessado e compartilhado (exemplo: [Github](https://github.com/))
 
 **Faça:** Utilize estrutura de pacotes para facilitar a navigação de software.
 
@@ -119,7 +119,7 @@ Nós recomendamos padrões bem definidos para escrita de código. Na área de bi
 
 **Faça:** Quando utilizar tecnologias de containers, sigas as boas práticas para garantir que as imagens associadas ou dependências não se atualizem se não for de forma explícita.
 
-**Faça:** Disponibilize as imagens es os arquivos de Build (Dockerfile) disponíveis para fins de documentação.
+**Faça:** Disponibilize as imagens es os arquivos de Build (Dockerfile) disponíveis para fins de documentação. Leia mais em [Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/).
 
 **Não Faça:**  Escreva documentação que não fique dentro do código em si (aos poucos por nossa experiência ficam desatualizados).
 
@@ -127,50 +127,19 @@ Nós recomendamos padrões bem definidos para escrita de código. Na área de bi
 
 **Não Faça:**  Quebre toda funcionalidade de um pipeline em módulos separados (Isto contraria um pouco em não fazer tasks monolíticas); mas o desenvolvedor com sua experiência poderá identificar quando melhor aplicar modularidade. Por isso recomendamos o uso de benchmarking para verificar a se o código e suas dependências ao executar a etapa se valem ser combinados ou separados.
 
-## Create a docs version
 
-Release a version 1.0 of your project:
+## Versionamento
 
-```bash
-npm run docusaurus docs:version 1.0
-```
+Os pipelines devem ser versionados assim como as imagens Docker associadas. Isto permite a rastreabilidade e além de garantir a qualidade perante auditorias e inspeções laboratoriais que exigem que todos o pipelines clínicos devam ser versionados e rastreáveis de quaisquer mudanças. Assim que você realiza mudanças e melhorias no seu pipeline, é recomendado que você saiba qual versão do pipeline e softwares utilizados para criar os resultados, assim permitindo a reproducibilidade e garantia de resultados consistentes. Nós recomendamos utilizar o nosso guia de versionamento (sistema de versionamento semântico)
+e utilizar [changelogs](https://keepachangelog.com/en/1.0.0/) para registar mudanças de pipeline.
 
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
 
-Your docs now have 2 versions:
+## Licenciamento
 
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
+Licenciamento é uma etapa no processo de desenvolvimento de código muito negligenciada, mas que é crítica especialmente quando o mesmo será disponibilizada ou utilizada para fins comerciais ou quando se deseja distribuir seu código de pipeline para outros grupos ou empresas fora do Varstation ou Hospital Israelita Albert Einstein. Nossos pipelines geralmente são privados, exceto quando discutidos com o gerente de bioinformática que irá avaliar o tipo de licença apropriado para o software e dados que serão produzidos.
 
-## Add a Version Dropdown
+**Faça:** Selecione ferramentas que são abertamente open-source para serem executados em seus pipelines a fim de evitar possíveis restrições legais. Quando utilizar softwares licenciados, verifica se podem ser publicados em domínio público ou até usados para fins de comerciais. Muitas vezes as licenças do pipeline desenvolvido podem estar em conflito com o do software, exigindo um trabalho adicional para adequação.
 
-To navigate seamlessly across versions, add a version dropdown.
+**Não Faça:** Crie ferramentas ou bibliotecas sem licença, um guia claro de quais termos de uso são importantes.
 
-Modify the `docusaurus.config.js` file:
-
-```js title="docusaurus.config.js"
-module.exports = {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'docsVersionDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
-
-The docs version dropdown appears in your navbar:
-
-![Docs Version Dropdown](/img/tutorial/docsVersionDropdown.png)
-
-## Update an existing version
-
-It is possible to edit versioned docs in their respective folder:
-
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
+Na próxima seção, vamos começar a navegar no clico de de vida do desenvolvimento dos pipelines de bioinformática e ilustrar com vários exemplos.
