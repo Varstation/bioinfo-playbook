@@ -23,7 +23,7 @@ e está sobre a licença open-source BSD-3-Clause.
 - [x] **Boas Vindas**
 - [x] **Para Começar**
 - [x] **Ciclo de Vida do Pipeline**
-- [ ] **Boas Práticas Requisitos**
+- [x] **Boas Práticas Requisitos**
 - [ ] **Boas Práticas Testes**
 - [ ] **Boas práticas (Build, test, validate)**
 - [ ] **Pipelines Germinativos, Somáticos e Metagenomas**
