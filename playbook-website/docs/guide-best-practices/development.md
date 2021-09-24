@@ -91,7 +91,6 @@ Construir pipelines é uma tarefa árdua, portanto sempre prezamos pelo reuso, d
 Trazemos um pequeno fluxograma para avaliação de construção de um pipeline do zero ou apenas uma melhoria de um pipeline anterior. Realize ajustes conforme sua necessidade.
 
 ![](/img/Fluxograma_pipeline.png)
-
 Figura 9: Fluxo para avaliação de construção de um pipeline a partir do zero ou criação de uma nova versão de um pipeline existente.
 ### Setup do ambiente de desenvolvimento local
 
