@@ -51,8 +51,8 @@ Submit the workflow to a Cromwell server.
   -h, --host <value>       Cromwell server URL.
 ```
 
-Se seu ambiente Docker estiver configurado corretamente e você baixar e rodar a imagem, você deveria o output do console exibido acima. Parabéns! Você percebeu que o comando tem a tag "prod" no final?  <**@JMB: Essa frase está estranha, parece estar faltando algo nela. Por favor, revisar! :)**>
+Se seu ambiente Docker estiver configurado corretamente e você baixar e rodar a imagem, você deveria o output do console exibido acima.
 
-"Prod" referencia a tag de imagem oficial mais atual em produção. Se quiser ver outras tags, dê uma olhada [aqui](https://hub.docker.com/r/broadinstitute/cromwell/tags/).
+Você percebeu que o comando cromwell tem a tag "prod" no final? A tag "prod" referencia a tag de imagem oficial mais atual em produção. Se quiser ver outras tags, dê uma olhada [aqui](https://hub.docker.com/r/broadinstitute/cromwell/tags/).
 
 Isto tudo que você precisa para começar! Vamos agora voltar para a seção de Pipelines para você escolher um Pipeline que deseja executar.
