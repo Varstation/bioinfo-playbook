@@ -8,15 +8,11 @@ Para executar um de nossos pipelines, é necessário ter o ambiente preparado pa
 
 ## Instalando o Docker
 
-Se você não é familiar com Docker, esta é uma tecnologia de container que permite usar um sistema
-completo de forma embarcada. Você pode configurar e instalar o Docker a partir deste [link](https://docs.docker.com/install/). Veja se
-você executar o "Hello-world" exemplo sem a necessidade de privilégios de superusuário antes de você
-seguir este tutorial.
+Se você não é familiar com Docker, esta é uma tecnologia de container que permite usar um sistema completo de forma embarcada. Você pode configurar e instalar o Docker a partir deste [link](https://docs.docker.com/install/). Veja se você consegue executar o "Hello-world" exemplo sem a necessidade de privilégios de superusuário antes de você seguir este tutorial.
 
 ## Cromwell
 
-[Cromwell](http://cromwell.readthedocs.io/en/stable/tutorials/FiveMinuteIntro/) é um sistema de gerenciamento de workflows desenvolvido pelo Instituto Broad que utilizamos no Varstation para orquestrar nossos pipelines. É um programa escrito em Java, portanto o executável do mesmo que você irá interagir é um arquivo ".jar" . O Instituto Broad provê um container Docker [https://hub.docker.com/r/broadinstitute/cromwell/](https://hub.docker.com/r/broadinstitute/cromwell/) que você poderá utilizar sem ter a necessidade de você instalar a aplicação Java em seu computador. Cromwell pode ser executado localmente, mas também interage com nossos serviços na nuvem para rodar pipelines. Para começar, veja o exemplo abaixo de como rodar o executável localmente:
-
+[Cromwell](http://cromwell.readthedocs.io/en/stable/tutorials/FiveMinuteIntro/) é um sistema de gerenciamento de workflows desenvolvido pelo Instituto Broad que utilizamos no Varstation para orquestrar nossos pipelines. É um programa escrito em Java, portanto o executável do mesmo que você irá interagir é um arquivo ".jar". O Instituto Broad provê um container Docker [https://hub.docker.com/r/broadinstitute/cromwell/](https://hub.docker.com/r/broadinstitute/cromwell/) que você poderá utilizar sem ter a necessidade de você instalar a aplicação Java em seu computador. Cromwell pode ser executado localmente, mas também interage com nossos serviços na nuvem para rodar pipelines. Para começar, veja o exemplo abaixo de como rodar o executável localmente:
 
 ```bash
 $ docker run broadinstitute/cromwell:prod
@@ -55,8 +51,8 @@ Submit the workflow to a Cromwell server.
   -h, --host <value>       Cromwell server URL.
 ```
 
-Se seu ambiente Docker estiver configurado corretamente e você baixar e rodar a imagem, você deveria o output do console exibido acima.  Parabéns! Você percebeu que o comando tem a tag "prod" no final ?
+Se seu ambiente Docker estiver configurado corretamente e você baixar e rodar a imagem, você deveria o output do console exibido acima. Parabéns! Você percebeu que o comando tem a tag "prod" no final?  <**@JMB: Essa frase está estranha, parece estar faltando algo nela. Por favor, revisar! :)**>
 
-"Prod" referencia a tag de imagem mais atual oficial em produção. Se quiser ver outras tags, dê uma olhada [aqui](https://hub.docker.com/r/broadinstitute/cromwell/tags/).
+"Prod" referencia a tag de imagem oficial mais atual em produção. Se quiser ver outras tags, dê uma olhada [aqui](https://hub.docker.com/r/broadinstitute/cromwell/tags/).
 
 Isto tudo que você precisa para começar! Vamos agora voltar para a seção de Pipelines para você escolher um Pipeline que deseja executar.
