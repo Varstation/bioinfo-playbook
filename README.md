@@ -16,7 +16,7 @@ e está sobre a licença open-source BSD-3-Clause.
 
 ### Seções
 
-![% concluído](https://progress-bar.dev/45/?title=concluido)
+![% concluído](https://progress-bar.dev/55/?title=concluido)
 
 
 - [x] **Arquitetura Base e Setup**
@@ -24,7 +24,7 @@ e está sobre a licença open-source BSD-3-Clause.
 - [x] **Para Começar**
 - [x] **Ciclo de Vida do Pipeline**
 - [x] **Boas Práticas Requisitos**
-- [ ] **Boas Práticas Testes**
+- [x] **Boas Práticas Testes**
 - [ ] **Boas práticas (Build, test, validate)**
 - [ ] **Pipelines Germinativos, Somáticos e Metagenomas**
 - [ ] **Sobre**
