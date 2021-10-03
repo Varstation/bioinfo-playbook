@@ -110,6 +110,7 @@ Figura 10: Fluxo para criação do pipeline usando o pipeline template.
 O nosso desenvolvimento local segue o seguinte fluxo ilustrado abaixo:
 
 ![](/img/Localflow.png)
+Figura 11: Fluxo do desenvolvimento local
 
   * [ ] Toda introdução de mudanças segue uma rotina de testes locais usando [suíte de testes automatizados]((./tests.md));
   * [ ] É realizado uma [avaliação de estilo](./style.md) de código-fonte e validação de sintaxe da linguagem WDL;
@@ -124,7 +125,7 @@ O nosso fluxo de integração contínua para Pull Requests (PR) segue o seguinte
 
 
 ![](/img/BuildWorkflow.png)
-
+Figura 12: Fluxo da construção do build após PR
 
   * [ ] Logo que um Pull request (PR) for submetido e houver alterações em código de pipeline (WDL e arquivos de configuração) a suíte de CI do Github entra em ação e cria uma instância de testes;
   * [ ] É realizado uma [avaliação de estilo](./style.md) de código-fonte e validação de sintaxe da linguagem WDL;
@@ -142,8 +143,31 @@ Nossa configuração de integração contínua utiliza as seguintes branches aba
 | develop | Todo código que pretende ser lançado ; ambiente de homologação |
 | master | Todo código que estável e que já passou por todos os testes; pipelines já com releases publicadas |
 
-O PR irá iniciar o pipeline de CI se ele identificar mudanças em código WDL, dependências do WDL (tasks), arquivos de configuração JSON, arquivos de teste ou inputs.
+O PR irá iniciar o pipeline de CI se ele identificar mudanças em código WDL, dependências do WDL (tasks), arquivos de configuração JSON, arquivos de teste ou inputs. No nosso repositório utilizamos o github actions com continuous integration, logo que é submetido ao repositório uma solicitação de pull request (PR) os CIs entram automático para realizar as etapas de validação de estilo e sintaxe de código e em seguida os testes automatizados. Uma vez que as etapas concluam com sucesso, o CI envia uma notificação informando que os builds e testes foram realizados com sucesso:
 
-## Tudo pronto ? Hora de conferir o checklist de liberação
+
+
+![](/img/PR-success.png)
+Figura 13: Tela de um PR com sucesso após build testada e aprovada.
 
 ### Exemplo de Pipeline
+
+Abaixo disponibilizamos um pipeline de exemplo para chamada de deteção de variantes seguindo as práticas aqui estabelecidas. Nosso pipeline é de detecção de variantes germinativas para os genes BRCA1 e BRCA2 no genoma humano. Utilizamos como ferramentas o [BWA-MEM](http://bio-bwa.sourceforge.net/) para alinhamento das sequências de DNA a partir dos FASTQs e o [Freebayes](https://github.com/freebayes/freebayes) para detecção de variantes SNV e indels.
+
+![](/img/wdl-demo-pipeline.png)
+Figura 14: Tela do repositório do pipeline germinativo wdl-demo-pipeline
+
+
+#### Link para o repositório:  [https://github.com/Varstation/wdl-demo-pipeline](https://github.com/Varstation/wdl-demo-pipeline)
+
+Todo o pipeline seguiu o fluxo de desenvolvimento na branch DEVELOP com múltiplas solicitações de PR os quais foram revisadas e ajustadas para atender o nosso processo de build de testes. Possuímos dois workflows de CI , o [primeiro](https://github.com/Varstation/wdl-demo-pipeline/blob/main/.github/workflows/ci.yml) para realizar a avaliação de sintaxe e estilo de código seguindo as boas práticas do nosso grupo, e o [segundo](https://github.com/Varstation/wdl-demo-pipeline/blob/main/.github/workflows/ci.yml) para realizar sucessivos testes de integração para verificação das etapas do pipeline para garantir que os mesmos continuem gerando os resultados válidos.
+
+![](/img/github-action-workflow.png)
+Figura 15: Tela dos logs dos workflows a partir do Github Actions.
+
+
+O build de documentação também é gerado a partir que é realizado a aprovação do PR, o qual é acionado uma [CI action](https://github.com/Varstation/wdl-demo-pipeline/blob/main/.github/workflows/publish.yml) específica para construção e publicação da documentação em ambiente de produção, releases são geradas a partir de um commmit no repositório de geração de tag (release).
+
+
+![](/img/wdl-docs.png)
+Figura 16: Tela da documentação do pipeline em WDL
