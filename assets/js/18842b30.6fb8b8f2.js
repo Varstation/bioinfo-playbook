@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkplaybook_website=self.webpackChunkplaybook_website||[]).push([[56],{8994:function(o){o.exports=JSON.parse('{"allTagsPath":"/bioinfo-playbook/blog/tags","slug":"docusaurus","name":"docusaurus","count":3,"permalink":"/bioinfo-playbook/blog/tags/docusaurus"}')}}]);
