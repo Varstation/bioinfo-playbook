@@ -10,7 +10,7 @@ Nesta seção iremos apresentar como você poderá desenvolver seu primeiro pipe
 
 ### 1.Design e Requisitos
 
-  * [ ] Você já realizou o Pipeline Canvas?  (Leia mais aqui  <**@JMB: qual link?? :)**> sobre o Pipeline Canvas)
+  * [ ] Você já realizou o Pipeline Canvas?  (Leia mais [aqui](../guide-best-practices/requirements.md)  sobre o Pipeline Canvas)
   * [ ] Você já definiu os requisitos do problema biológico a resolver? (espécie, genomas, etc.)
   * [ ] Já definiu as entradas e saídas esperadas em alto nível?
   * [ ] Há *papers* e materiais auxiliares para definição das ferramentas a utilizar?
@@ -21,12 +21,12 @@ Nesta seção iremos apresentar como você poderá desenvolver seu primeiro pipe
 
   * [ ] Há um pipeline prévio que já atenda os requisitos?
   * [ ] Se pipeline prévio, clonar o pipeline anterior com ajustes em parâmetros e arquivos auxiliares.
-  * [ ] Se pipeline novo, criar um repositório novo seguindo o template da bioinformatica.
-  * [ ] Setup do desenvolvimento de Git e GitFlow  <**@JMB: Se tiver algum guia para essa criação seria interessante demonstrar ou linkar, demonstrando políticas de branches e regras de integração com a mainline :)**>
-  * [ ] Setup do desenvolvimento de Docker e WDL local  <**@JMB: se tiver algum guia para essa criação seria interessante demonstrar ou linkar, demonstrando parte da IaC :)**>
-  * [ ] Setup do desenvolvimento do Ambiente Remoto  <**@JMB: se tiver algum guia para essa criação seria interessante demonstrar ou linkar, demonstrando parte da IaC :)**>
+  * [ ] Se pipeline novo, criar um repositório novo seguindo o [template da bioinformatica](https://github.com/Varstation/pipeline-template).
+  * [ ] Setup do desenvolvimento de Git e GitFlow [Link](../guide-best-practices/development.md). 
+  * [ ] Setup do desenvolvimento de Docker e WDL local [Link](../guide-running/setup-docker.md).
+  * [ ] Setup do desenvolvimento do Ambiente Remoto  [Link](../guide-running/running-remote-deployed-pipeline.md)
   * [ ] Definir Sprint Backlog e Cronograma alinhado com Product Owner e Scrum Master
-  * [ ] Definição de fluxo de Pull Request e Aprovação  <**@JMB: se tiver algum guia para essa criação seria interessante demonstrar ou linkar, demonstrando políticas de integração com a mainline :)**>
+  * [ ] Definição de fluxo de Pull Request e Aprovação [Link](../guide-best-practices/development.md)
 
 ### 3. Monitoramento e Testes em Homologação
 
@@ -36,7 +36,7 @@ Nesta seção iremos apresentar como você poderá desenvolver seu primeiro pipe
 
  ### 4. Documentação Técnica
 
-  * [ ] Construção da Documentação Técnica sobre o fluxo do pipeline e versionamento dos softwares de bioinformática  <**@JMB: se tiver algum guia para esse versionamento seria interessante demonstrar ou linkar, demonstrando políticas de versionamento no maturity branch de release ou mesmo na mainline :)**>
+  * [ ] Construção da Documentação Técnica sobre o fluxo do pipeline e versionamento dos softwares de bioinformática [Link](../guide-best-practices/release.md)
   * [ ] Construção do POP de bioinformática sobre execução do Pipeline
 
 ### 5. Validação
@@ -48,21 +48,21 @@ Nesta seção iremos apresentar como você poderá desenvolver seu primeiro pipe
 ### 6. Deploy no Varstation
 
   * [ ] Congelamento do *release candidate* do pipeline de bioinformática
-  * [ ] Criação do deployment release zip para deploy no varstation  <**@JMB: aqui existe alguma regra de continuous delivery? Se sim, vale a pena demonstrar ou linkar :)**>
+  * [ ] Criação do deployment release zip para deploy no varstation [Link](../guide-best-practices/release.md)
   * [ ] Criação da tag no github (versionamento semântico)
   * [ ] Build do Release Candidate no Varstation Produção
   * [ ] Comitê de GM para definição da data de lançamento
-  * [ ] Deploy da Release para ambiente produtivo  <**@JMB: aqui existe alguma regra de continuous deployment? Se sim, vale a pena demonstrar ou linkar :)**>
-  * [ ] Testes no ambiente de validação produtivo com 1 amostra de benchmark de bioinformática  <**@JMB: aqui existe alguma regra de continuous testing? Se sim, vale a pena demonstrar ou linkar :)**>
+  * [ ] Deploy da Release para ambiente produtivo  [Link](../guide-best-practices/release.md)
+  * [ ] Testes no ambiente de validação produtivo com 1 amostra de benchmark de bioinformática [Link](../guide-best-practices/tests.md)
 
 ### 7. Documentação de Validação 
 
   * [ ] Conclusão da Documentação de Validação Bioinformática
   * [ ] Assinatura e de acordo dos Gerentes de Bioinformática e NGS
-  * [ ] Armazenamento do documento versionado no drive da instituição <**@JMB: aqui existe alguma automação para garantir ou facilitar que o entregável está na versão correta e armazenado no lugar correto? Se sim, vale a pena demonstrar ou linkar :)**>
+  * [ ] Armazenamento do documento versionado no drive da instituição.
   
 ### 8. Referências
- * [ ] Registro no github e documentação oficial do varstation do pipeline liberado.  <**@JMB: Existe alguma automação aqui para garantir a publicação oficial do entregável? Se sim, vale a pena demonstrar ou linkar :)**>
+ * [ ] Registro no github e documentação oficial do varstation do pipeline liberado. [Link](../guide-best-practices/release.md)
 
 
 ## Você está pronto para desenvolver ?
