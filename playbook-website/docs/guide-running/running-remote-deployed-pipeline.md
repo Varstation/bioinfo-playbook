@@ -6,9 +6,9 @@ sidebar_position: 3
 
 Neste tutorial iremos apresentar como executamos o pipeline em WDL em Cromwell hospedados em ambientes remotos ou cloud/nuvem. Ao fim desta seção, você terá a capacidade de executar seus pipelines wdl utilizando de recursos de infra-estrutura mais sofisticados em nuvem como AWS, Azure, ou até em outro ambiente-nuvem privado.
 
-## Visão do Oliver em execução
+## Visão do Weedle em execução
 
-Para executar um pipeline em um orquestrador Cromwell hospedado remotamente, utilizamos de um gerenciador de orquestramento open-source desenvolvido pelo nosso grupo : Weedle. Baseado na sua página principal, esta ferramenta pode auxiliar no processo de submissão, inspeção, interrupção e reexecução de *workflows* em ambiente Cromwell.
+Para executar um pipeline em um orquestrador Cromwell hospedado remotamente, utilizamos de um gerenciador de orquestramento open-source desenvolvido pelo nosso grupo : [Weedle](https://github.com/Varstation/weedle). Baseado na sua página principal, esta ferramenta pode auxiliar no processo de submissão, inspeção, interrupção e reexecução de *workflows* em ambiente Cromwell.
 Ele também permite a possibilidade de rastrear os jobs de execução para facilitar o reporting. Permite também enviar parâmetros via arquivos JSON. E finalmente, a sua integração com ambientes em nuvem como AWS, facilitando o interfaceamento com estes ambientes nativos em nuvem.
 
 ```bash
