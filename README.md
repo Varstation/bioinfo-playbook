@@ -27,5 +27,5 @@ e está sobre a licença open-source BSD-3-Clause.
 - [x] **Boas Práticas Testes**
 - [x] **Boas práticas (Build, test, validate)**
 - [ ] **Pipelines Germinativos, Somáticos e Metagenomas**
-- [ ] **Sobre**
+- [x] **Sobre**
 - [x] **Como Contribuir**
